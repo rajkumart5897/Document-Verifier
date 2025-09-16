@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Distributed Blockchain Node</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Distributed Blockchain Node</h1>
+
+    <div class="section">
+      <h3>Upload File</h3>
+      <input type="file" id="fileInput" />
+      <button onclick="uploadFile()">Upload File</button>
+      <div id="sizeError" style="color: red; display: none">
+        File size must be 10KB or less.
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Flow Diagram</h3>
+      <div id="mermaidChain"></div>
+      <h3>Chain</h3>
+      <pre id="chain">Blockchain data will appear here...</pre>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Add Mermaid CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  </body>
+</html>
